@@ -2,8 +2,13 @@
 
 /* Most used values */
 :root {
-
-}
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+  }
 
 /* General customization */
 * {
@@ -28,9 +33,42 @@ a {
 h1, h2 {
     font-weight: 300;
     line-height: 1.2;
-    margin: 10px 0;
 }
 p {margin: 10px 0;}
 
 img {width: 100%;}
+
+/* Reusable classes */
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 100%
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navbar */
+#navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+}
+#navbar .logo {font-size: 32px;}
+#navbar .flex {justify-content: space-between;}
+#navbar a {
+    margin: 0 5px;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px transparent solid;
+    transition: border-bottom .2s ease-in;
+}
+#navbar a:hover {
+    border-bottom: 2px #fff solid;
+  }
 
