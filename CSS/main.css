@@ -114,9 +114,11 @@ img {width: 100%;}
 #showcase {
     background-color: var(--primary-color);
     height: 400px;
-    color: #fff
+    color: #fff;
+    position: relative;
+    z-index: 1;
 }
-
+.showcase-text {z-index: 1;}
 .showcase-text h2 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -128,6 +130,7 @@ img {width: 100%;}
 #showcase .grid {
     grid-template-columns: 55% 45%;
     gap: 50px;
+    position: relative;
 }
 
 .showcase-form {
@@ -155,4 +158,25 @@ img {width: 100%;}
 
 .showcase-form input:focus {
     outline: none;
+}
+
+.wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 105%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotateX(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
 }
