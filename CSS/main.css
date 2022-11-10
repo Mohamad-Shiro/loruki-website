@@ -167,3 +167,29 @@ img {width: 100%;}
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
+
+/* Cloud section */
+#cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+
+/* Supported languages */
+#langs .flex {flex-wrap: wrap;}
+
+#langs h2 {margin-bottom: 20px;}
+
+#langs .container .card h4 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+
+/* Footer */
+.footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .social a {
+    margin: 0 10px
+}
