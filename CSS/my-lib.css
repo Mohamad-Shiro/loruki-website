@@ -99,6 +99,28 @@
 .xl {font-size: 4rem;}
 .text-center {text-align: center;}
 
+/* Alert */
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: #fff;
+}
+
 /* Add margins */
 .my-1 {margin: 1rem 0}
 .my-2 {margin: 1.5rem 0}
